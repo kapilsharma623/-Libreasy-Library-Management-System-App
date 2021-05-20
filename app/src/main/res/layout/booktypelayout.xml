@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/arttbookbox"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/booktypebackground">
+
+        <ImageView
+            android:id="@+id/arttbookimageview"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/cbook"
+            android:scaleType="fitCenter"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:id="@+id/arttvbooknamee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="2dp"
+                android:textColor="?attr/textblack_color">
+            </TextView>
+            <TextView
+                android:id="@+id/arttvbooksubjectt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="2dp"
+                android:textColor="?attr/textblack_color">
+            </TextView>
+            <TextView
+                android:id="@+id/arttvbookauthorr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="2dp"
+                android:textColor="?attr/textblack_color">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity :"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="1"
+                    android:textColor="?attr/textblack_color">
+                </TextView>
+                <TextView
+                    android:id="@+id/arttvbookquantityy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_weight="1"
+                    android:textColor="?attr/textblack_color">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

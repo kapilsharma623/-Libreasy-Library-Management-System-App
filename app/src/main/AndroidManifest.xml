@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.litereasy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/booklogoo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Light">
+        <activity android:name=".activities.duebookkk"></activity>
+        <activity android:name=".activities.searchbookonclick" />
+        <activity android:name=".activities.searchresultactivity" />
+        <activity android:name=".activities.Splashscreenactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.adminpage" />
+        <activity android:name=".activities.Adminactivity" />
+        <activity android:name=".activities.MainActivity" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

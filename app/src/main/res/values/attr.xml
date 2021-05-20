@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="dark_theme">
+        <attr name="background_color" format="color"></attr>
+        <attr name="text_color" format="color"></attr>
+        <attr name="textblack_color" format="color"></attr>
+        <attr name="textlight_color" format="color"></attr>
+        <attr name="darkwhite_color" format="color"></attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/availablebooks"
+        android:icon="@drawable/allbooks"
+        android:title="Available Books"
+        android:checked="true"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/existinguser"
+        android:icon="@drawable/existingusericon"
+        android:title="Existing User"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/addusers"
+        android:icon="@drawable/user"
+        android:title="Add User"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+
+    <item
+        android:id="@+id/addbooks"
+        android:icon="@drawable/addbooks"
+        android:title="Add Book"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/soldbooks"
+        android:icon="@drawable/soldbooks"
+        android:title="Delete User"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/sms"
+        android:icon="@drawable/sms"
+        android:title="SMS &amp; EMAIL"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+</menu>

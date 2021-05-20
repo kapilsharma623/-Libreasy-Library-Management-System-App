@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newcollections"
+        android:icon="@drawable/newcollection"
+        android:title="New Collections"
+        android:checked="true"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/allbooks"
+        android:icon="@drawable/allbooks"
+        android:title="All Books"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+    <item
+        android:id="@+id/dues"
+        android:icon="@drawable/dueee"
+        android:title="Check Dues"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about"
+        android:title="About"
+        android:color="@color/blue"
+        android:iconTint="@color/blue"/>
+</menu>

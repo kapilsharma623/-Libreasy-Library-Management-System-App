@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".addbooksfragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue">
+            <LinearLayout
+                android:id="@+id/availablebooksmenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/backbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/backbutton"
+                    app:tint="?attr/background_color"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Add New Book"
+                    android:textColor="?attr/background_color"
+                    android:fontFamily="sans-serif"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:paddingLeft="40dp"
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/availablebooksmenu"
+                android:orientation="vertical"
+                android:background="@drawable/popular"
+                android:backgroundTint="?attr/background_color">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:background="?attr/background_color">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/bookimagee"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/allbooks"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tvnewbookname"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Book Name"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+                <EditText
+                    android:id="@+id/tvbooksubject"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:ems="10"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:inputType="textPersonName"
+                    android:hint="Subject"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+                <EditText
+                    android:id="@+id/tvbookauthor"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:hint="Author"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/tvnewbookdate"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="Todays Date"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/tvquantity"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Quantity"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/tvbookdescription"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#2C2C2C"
+                    android:textColorHint="#2C2C2C"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="Description"
+                    android:background="@drawable/searchavailablebooksbackground"
+                    android:padding="10dp"/>
+
+
+                <Button
+                    android:id="@+id/tvsubmitbtn"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Add Book" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
